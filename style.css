@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------------------------------------------------------------------------ */
+.header-fixture_profile{
+  width: 100%;
+  padding: 0 50px;
+  margin-top: 85px;
+  background: url("./HintergrundSpieler.avif");
+background-size: cover;
+height: 426px;
+display: flex;
+align-items: center;
+margin-top: 60px;
+overflow: hidden;
+justify-content: space-between;
+}
+.header-fixture_profile .left {
+  color:  white;
+}
+.header-fixture_profile .left h1{
+  font-family: Noto Sans;
+font-size: 50px;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: left;
+}
+.header-fixture_profile .left p{
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+opacity: .8;  
+}
+.header-fixture_profile .right img{
+  width: 418px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 199px;
+}
+.header-fixture_profile .left i{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/*----*/
+.details{
+  overflow: hidden;
+  width: 80%;
+  margin: 20px auto;
+border-radius: 16px;
+border: 1px solid rgb(247, 244, 244);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.details .head{
+  width: 100%;
+  padding: 15px 30px;
+  background: #E22028;
+}
+.details .footer{
+  padding: 20px;
+  display: flex;
+  height: 400px;
+}
+.details .footer .left{
+width: 45%;
+}
+.details .footer .left h1{
+  position: relative;
+  font-family: Noto Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+}
+.details .footer .left h1::before{
+  position: absolute;
+content: '';
+width: 30%;
+height: 2px;
+bottom: -6px;
+background: linear-gradient(109.6deg, rgb(243, 67, 67) 11.2%, rgb(2, 38, 208) 100.2%);
+}
+.details .footer .center,
+.details .footer  .right{
+  padding: 50px;
+}
+.details .footer .all-right{
+  display: flex;
+}
+.details .footer .center h3,
+.details .footer  .right h3{
+  font-family: Noto Sans;
+  margin-bottom: 30px ;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;  
+}
+.details .footer  .right h3{
+color:#8b050c;
+  text-align: right;  
+}
+.details .footer .left p{
+  font-family: Noto Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+padding: 20px 0;
+}
+.details .head
+{
+  background:url("./HintergrundSpieler.avif");
+  background-size: cover;
+}
+.details .head h1 {
+color: white;
+font-family: Noto Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+}
+.season-overview{
+  width: 100%;  
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin: 80px 0;
+}
+.season-overview .head{
+  background: url("./HintergrundSpieler.avif");
+  background-size: cover;
+}
+.season-overview .head h1 {
+color: white;
+text-align: center;
+padding: 15px 0;
+}
+.season-overview .footer{
+  width: 100%;  
+  display: flex;
+  flex-wrap: wrap;
+}
+.season-overview .footer .info{
+  width: 20%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100px;
+border-right: 1px solid rgb(245, 244, 244);
+}
+.season-overview .footer .info:last-child{
+border-left: 1px solid rgb(245, 244, 244);
+}
+.season-overview .footer .info h1,
+.season-overview .footer .info p 
+{
+color: #9e0f14;
+}
+
+
+/* details */
+@media screen and (max-width:1250px){
+.details{
+  width: 90%;
+
+}
+.details .footer{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.details .footer .left{
+  width: 100%;
+}
+.details .footer .left p{
+  font-family: Noto Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+}
+.details .footer .center,
+.details .footer  .right{
+padding-left: 100px;
+}
+.season-overview .footer .info{
+  width: 50%;
+}
+
+}
+
+@media screen and (max-width:710px){
+.details .footer .center,
+.details .footer  .right{
+padding: 0px;
+}
+.details{
+  width: 97%;
+}
+.details .footer{
+  padding: 20px;
+  display: flex;
+  height: 800px;
+}
+}
+/* -----------------      end details ----------------- */
+
+
+.all_player {
+    width: 90%;
+    margin: auto;
+}
+.all_players_team .players{
+    width: 300px;
+    height: 346px;
+    background: url("./HintergrundSpieler.avif");
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+margin: 0px ;
+}
+.all_players_team .players img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+}
+.all_players_team .players h1{
+padding-left: 20px;
+    padding-top: 20px;
+color: white;
+}
+.all_players_team .players p{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+color: white;
+font-weight: 600;
+font-size: 20px;
+}
+.all_players_team .header_player{
+    margin: 30px 90px;
+    color: rgb(7, 7, 89);
+
+}
+
+.all_players_team .Deffender .all_player,
+.all_players_team .MIDFIELDERS .all_player,
+.all_players_team .FORWARDS .all_player
+{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.all_players_team  .all_player ,
+.all_players_team  .all_player  {
+   display: flex; 
+}
+.all_players_team  .gooalkeepers .all_player .players{
+margin-right: 54px !important;
+}
+
+/* ----------repsonsive */
+@media screen and (max-width:550px){
+    .header-fixture{
+      width: 100%;
+      padding: 0 0px;
+  }
+  .header-fixture{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  .header-fixture .left h1 {
+    font-size: 24px;
+  }
+  .header-fixture .left p {
+    font-size: 16px; 
+    text-align: center;
+  }
+  .all_player {
+    width: 98%;
+    margin: auto;
+}
+
+ .all_players_team{
+    width: 100%;
+ }
+.all_players_team .players{
+    width: 199px;
+    height: 300px;
+    margin:10px  0px ;
+}
+
+
+.all_players_team .header_player{
+    margin:  5px;
+    margin-top: 160px;
+    margin-bottom: 20px;
+    color: rgb(7, 7, 89);
+}
+.all_players_team  .gooalkeepers .all_player .players{
+    margin-right: 6px !important;
+    }
+    
+}
